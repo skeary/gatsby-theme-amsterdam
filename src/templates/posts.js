@@ -9,19 +9,19 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 import { startCase } from 'lodash'
 
 const PostsPage = ({ data, pageContext }) => {
-  const { intro } = useSiteMetadata()
+  const { intro, image, title } = useSiteMetadata()
   const posts = data.allPost.edges
 
   let ogImage
   try {
-    ogImage = posts[0].node.cover.childImageSharp.ogimg.src
+    ogImage = image;
   } catch (error) {
     ogImage = null
   }
 
   return (
     <>
-      <SEO image={ogImage} title={startCase(pageContext.basePath)} />
+      <SEO image={ogImage} title={title} />
       <Container fullWidth noPadding>
         {intro && <Intro text={intro} context={pageContext} />}
         {posts.length > 0 && <PostList posts={posts} context={pageContext} />}
