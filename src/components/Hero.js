@@ -45,6 +45,7 @@ const Date = styled.p`
 `
 
 const Hero = props => {
+  console.log(props.image.childImageSharp.fluid);
   return (
     <Wrapper>
       <TextContainer>
