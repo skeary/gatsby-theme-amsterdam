@@ -130,7 +130,6 @@ const BasicGrid = props => {
             <Excerpt>{post.excerpt}</Excerpt>
           </Link>
           <Container>
-            {post.date && <Date>{post.date}</Date>}
             {post.tags && (
               <>
                 <Divider>/</Divider>
