@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   h4,
   h5,
   h6 {
-    font-weight: ${props => props.theme.fonts.boldWeight};
+    font-weight: ${props => props.theme.fonts.normalWeight};
     line-height: 1.25;
     margin: 0 0 1rem;
   }
