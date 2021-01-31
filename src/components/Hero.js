@@ -25,7 +25,7 @@ const TextContainer = styled.div`
 `
 
 const Title = styled.h2`
-  font-weight: ${props => props.theme.fonts.boldWeight};
+  font-weight: ${props => props.theme.fonts.normalWeight};
   line-height: 1.25;
   text-align: left;
   margin: 0 0 1rem;
