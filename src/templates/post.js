@@ -56,7 +56,7 @@ export const pageQuery = graphql`
       date(formatString: "MMMM DD, YYYY")
       cover {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
           }
           ogimg: resize(width: 1000) {
